@@ -1,0 +1,142 @@
+.contact{
+  width: 100%;
+  height: 100vh;
+}
+
+.contact .ContactUsSection{
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact .ContactUsSection .leftSide{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.contact .ContactUsSection .leftSide .form{
+  width: 60%;
+  height: 75%;
+  margin: auto;
+  margin-right: 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.contact .ContactUsSection .leftSide .form form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .ContactUsSection .leftSide .form form input{
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 17px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.contact .ContactUsSection .leftSide .form form textarea{
+  width: 86%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  background: transparent;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.contact .ContactUsSection .leftSide .form form button{
+  width: 90%;
+  height: 40px;
+  background-color: #980dbb;
+  color: #fff;
+  font-style: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  bottom: 2%;
+}
+
+.contact .ContactUsSection .rightSide{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.contact .ContactUsSection .rightSide .contactInfo{
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.contact .ContactUsSection .rightSide .contactInfo .infoSection{
+  text-align: left;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* .contact .ContactUsSection .rightSide .contactInfo .infoSection .contactIcon{
+  font-size: 28px;
+  margin-right: 10px;
+} */
+
+.contact .ContactUsSection .rightSide .contactInfo .infoSection p{
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.contact .ContactUsSection .rightSide .contactInfo .infoSection p span{
+  font-weight: normal;
+}
+
+.contact .ContactUsSection .rightSide .contactInfo .infoSection .icon{
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #980dbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.contact .ContactUsSection .rightSide .contactInfo .infoSection .icon .contactIcon{
+  font-size: 19px;
+  fill: #fff !important;
+  margin-right: 0px;
+}

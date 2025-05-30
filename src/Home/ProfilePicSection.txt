@@ -1,0 +1,12 @@
+import React from 'react'
+
+const ProfilePicSection = () => {
+  return (
+    <div className='ProfilePicSection'>
+      <div className="Profile-pic">
+      </div>
+    </div>
+  )
+}
+
+export default ProfilePicSection

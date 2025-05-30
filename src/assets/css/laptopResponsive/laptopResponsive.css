@@ -1,0 +1,154 @@
+@media(min-width:600px) and (max-width:767px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .Home {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .navbar .name-section {
+    width: 90%;
+    height: 30px;
+    text-align: start;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .name-section h1 {
+    font-size: 22px;
+    margin: 0%;
+  }
+
+  .navbar .navhidden {
+    display: none;
+  }
+
+  .navbar .show {
+    display: block;
+  }
+
+  .navbar .menubar {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  .navbar .navbar-menu {
+    width: 100%;
+    height: 60vh;
+    background-color: #980dbb;
+    transition: 1s;
+    z-index: 100;
+  }
+
+  .navbar .hidden {
+    position: absolute;
+    top: -900px;
+  }
+
+  .navbar .show {
+    position: absolute;
+    top: 0px;
+  }
+
+  .navbar .navbar-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0px;
+  }
+
+  .navbar .navbar-menu ul li {
+    width: 100%;
+    height: 20%;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navbar .navbar-menu ul li:hover {
+    border-radius: 0px;
+  }
+
+  .navbar .navbar-menu ul li .Navbar-Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .navbar .navbar-menu ul .menubar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .menubar {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .Home .Hero-section {
+    height: 85vh;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .Home .Hero-section .Intro-Section {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+  }
+
+  .Hero-section .Intro-Section .Intro {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Hero-section .Intro-Section .Intro h5 {
+    font-size: 15px;
+  }
+
+  .Hero-section .Intro-Section .Intro h1 {
+    font-size: 42px;
+  }
+
+  .Hero-section .Intro-Section .Intro p {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .Hero-section .Intro-Section .Intro .Intro-Button .Project-button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+  }
+
+  .Hero-section .Intro-Section .Intro .Intro-Button .Resume-button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 5px;
+  }
+
+  .Hero-section .Intro-Section .Intro .Intro-Button .Resume-button .Links,
+  .Hero-section .Intro-Section .Intro .Intro-Button .Project-button .Links {
+    font-size: 14px;
+  }
+
+  .Hero-section .ProfilePicSection {
+    display: none;
+  }
+}

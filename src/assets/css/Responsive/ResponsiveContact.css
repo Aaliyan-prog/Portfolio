@@ -1,0 +1,75 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact{
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact .ContactUsSection{
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .contact .ContactUsSection .leftSide{
+    width: 100%;
+    height: 360px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact .ContactUsSection .leftSide .form{
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+  }
+
+  .contact .ContactUsSection .leftSide .form form input{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  
+  .contact .ContactUsSection .leftSide .form form textarea{
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .contact .ContactUsSection .leftSide .form form button{
+    width: 90%;
+    height: 30px;
+    font-style: 12px;
+  }
+
+  .contact .ContactUsSection .rightSide{
+    width: 100%;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  
+  .contact .ContactUsSection .rightSide .contactInfo{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contact .ContactUsSection .rightSide .contactInfo .infoSection{
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .contact .ContactUsSection .rightSide .contactInfo .infoSection .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact .ContactUsSection .rightSide .contactInfo .infoSection .icon .contactIcon{
+    font-size: 16px;
+  }
+
+}

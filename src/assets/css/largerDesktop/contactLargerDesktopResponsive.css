@@ -1,0 +1,38 @@
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .contact .ContactUsSection .leftSide .form {
+    width: 80%;
+    height: 450px;
+  }
+
+  .contact .ContactUsSection .leftSide .form form {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .ContactUsSection .leftSide .form form input {
+    width: 90%;
+    height: 50px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact .ContactUsSection .leftSide .form form textarea {
+    width: 90%;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .contact .ContactUsSection .leftSide .form form button {
+    bottom: 5%;
+  }
+
+  .contact .ContactUsSection .rightSide .contactInfo {
+    height: 55%;
+  }
+}

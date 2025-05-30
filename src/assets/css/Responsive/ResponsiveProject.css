@@ -1,0 +1,111 @@
+@media (min-width: 320px) and (max-width: 480px){
+  .project-content{
+    width: 100%;
+    height: auto;
+  }
+
+  .ProjectSection{
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .ProjectSection .left-section{
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  
+  .ProjectSection .left-section .projects-menubar{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ProjectSection .left-section .projects-menubar h1{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .ProjectSection .left-section .projects-menubar .projects-menubar-list li {
+    height: 40px;
+  }
+
+  .ProjectSection .left-section .projects-menubar .projects-menubar-list li:hover {
+    background-color: transparent;
+    border-radius: 0px;
+  }
+  
+  .ProjectSection .left-section .projects-menubar .projects-menubar-list li .menubar-Links{
+    font-size: 14px;
+  }
+  
+  .ProjectSection .right-section{
+    width: 100%;
+    height: 50%;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content{
+    width: 100%;
+    height: 100%;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box{
+    width: 90%;
+    height: 100%;
+    overflow: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #888 transparent;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes{
+    width: 220px;
+    height: 260px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .imgDiv{
+    height: 40%;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content h4 {
+    margin-top: 10px;
+  }
+  
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content {
+    margin-top: 10px;
+    position: relative;
+    height: 120px;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content p {
+    margin-top: 10px;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content .skillTags{
+    position: absolute;
+    bottom: 0%;
+  }
+
+  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content .skillTags .skillTag{
+    width: 30px;
+    font-size: 10px;
+    margin-right: 3px;
+  }
+}

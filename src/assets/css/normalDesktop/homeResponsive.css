@@ -1,0 +1,107 @@
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .Home {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .navbar .name-section h1 {
+    font-size: 22px;
+    margin: 0%;
+    margin-left: 10px;
+  }
+
+  .navbar .menubar {
+    display: none;
+  }
+
+  .navbar .navbar-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar .navbar-menu ul li {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .navbar .navbar-menu ul li:hover {
+    border-radius: 0px;
+  }
+
+  .navbar .navbar-menu ul li .Navbar-Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .Home .Hero-section {
+    height: 85vh;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .Home .Hero-section .Intro-Section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Hero-section .Intro-Section .Intro {
+    width: 65%;
+    height: 80%;
+  }
+
+  .Hero-section .Intro-Section .Intro h5 {
+    font-size: 14px;
+  }
+
+  .Hero-section .Intro-Section .Intro h1 {
+    font-size: 40px;
+  }
+
+  .Hero-section .Intro-Section .Intro p {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .Hero-section .Intro-Section .Intro .Intro-Button .Project-button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+  }
+
+  .Hero-section .Intro-Section .Intro .Intro-Button .Resume-button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 5px;
+  }
+
+  .Hero-section .Intro-Section .Intro .Intro-Button .Resume-button .Links,
+  .Hero-section .Intro-Section .Intro .Intro-Button .Project-button .Links {
+    font-size: 14px;
+  }
+  
+  .Hero-section .ProfilePicSection{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Hero-section .ProfilePicSection .Profile-pic{
+    width: 250px;
+    height: 250px;
+  }
+}
