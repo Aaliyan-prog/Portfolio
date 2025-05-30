@@ -7,7 +7,6 @@ import ProjectBackendshow from './Project/ProjectBackendshow'
 import Skill from './Project/Skill'
 import Resume from './Resume/Resume'
 import Contact from './Contact/Contact'
-import Copywriting from './Copywriting/Copywriting'
 
 const AppOutlet = () => {
   return (
@@ -53,10 +52,6 @@ const router = createBrowserRouter([
       {
         path: "/contact-Us",
         element: <Contact/>
-      },
-      {
-        path: "/copywriting-email/:id",
-        element: <Copywriting/>
       }
     ]
   }
