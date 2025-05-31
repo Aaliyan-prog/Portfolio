@@ -56,15 +56,9 @@ const router = createBrowserRouter([
     ]
   }
 ],
-<<<<<<< HEAD
 {
     basename: "/Portfolio" // Add this to match your Vite config
 }
-=======
-  {
-    basename: "/Portfolio" // Add this to match your Vite config
-  }
->>>>>>> 201171d1065ff62323f8daa09552c51c04aa7a60
 )
 
 function App() {
