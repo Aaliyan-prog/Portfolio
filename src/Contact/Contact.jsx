@@ -14,38 +14,6 @@ import { IoIosMail } from "react-icons/io";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const HandleSubmit = async (event) => {
-    event.preventDefault();
-
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("message", message);
-
-    try {
-      const response = await fetch("https://formsubmit.co/el/rurime" , {
-        method: "POST",
-        body: formData,
-      })
-
-      if(response.ok){
-        alert("Submitted Form Successfully");
-        setName("");
-        setEmail("");
-        setMessage("");
-      } else {
-        alert("Something is wrong");
-      }
-    } catch (error) {
-      console.log("Error", error);
-      alert("An error accur while submitting the form")
-    }
-  }
-
   return (
     <div className="contact">
       <Navbar active={"contact"}/>
@@ -53,34 +21,11 @@ const Contact = () => {
         <div className="leftSide">
           <div className="form">
             <h1>Contact Us</h1>
-            <form onSubmit={HandleSubmit}>
-              <input 
-                type="text" 
-                name='name' 
-                value={name} 
-                onChange={(e) => setName(e.target.value)} 
-                placeholder='Enter Your Name'
-                required
-              />
-              <input 
-                type="email" 
-                name='email' 
-                value={email} 
-                onChange={(e) => setEmail(e.target.value)} 
-                placeholder='Enter Your Email'
-                required
-              />
-              <textarea 
-                name="message" 
-                value={message} 
-                onChange={(e) => setMessage(e.target.value)} 
-                id="desc" 
-                rows="5"
-                cols="10" 
-                placeholder='Enter Your Message'
-                required
-              ></textarea>
-              <button>Submit</button>
+            <form action="https://formsubmit.co/aaliyandev786@gmail.com" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send</button>
             </form>
           </div>
         </div>
