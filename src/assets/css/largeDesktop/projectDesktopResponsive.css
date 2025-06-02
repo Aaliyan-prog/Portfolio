@@ -91,9 +91,9 @@
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box {
-    overflow: none;
     width: 100%;
     height: 100%;
+    overflow: none;
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-color: #888 transparent;
@@ -108,7 +108,7 @@
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes {
-    width: 300px;
+    width: 320px;
     height: 350px;
     border: 1px solid #fff;
     margin-top: 30px;
@@ -130,7 +130,6 @@
     margin: auto;
     object-fit: contain;
     border-radius: 10px;
-    /* margin-top: 10px; */
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content {
@@ -142,6 +141,7 @@
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content h4 {
     font-size: 18px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content p {

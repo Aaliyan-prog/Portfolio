@@ -27,7 +27,7 @@ const Contact = () => {
     formData.append("message", message);
 
     try {
-      const response = await fetch("https://formsubmit.co/aaliyandev786@gmail.com" , {
+      const response = await fetch("https://formsubmit.co/el/rurime" , {
         method: "POST",
         body: formData,
       })
@@ -56,7 +56,8 @@ const Contact = () => {
             <form onSubmit={HandleSubmit}>
               <input 
                 type="text" 
-                name='name' value={name} 
+                name='name' 
+                value={name} 
                 onChange={(e) => setName(e.target.value)} 
                 placeholder='Enter Your Name'
                 required

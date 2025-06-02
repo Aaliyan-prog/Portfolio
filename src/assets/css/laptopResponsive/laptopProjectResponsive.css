@@ -70,7 +70,7 @@
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes {
-    width: 210px;
+    width: 230px;
     height: 260px;
     margin: auto;
     margin-top: 20px;
@@ -88,6 +88,7 @@
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content h4 {
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
   }
 
@@ -107,7 +108,7 @@
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content .skillTags .skillTag {
-    width: 30px;
+    width: 40px;
     font-size: 10px;
     margin-right: 3px;
   }

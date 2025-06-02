@@ -71,7 +71,7 @@
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes {
     width: 280px;
-    height: 260px;
+    height: 280px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -81,20 +81,17 @@
     height: 40%;
   }
 
-  .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content h4 {
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content {
-    margin-top: 10px;
+    margin-top: 15px;
     position: relative;
     height: 120px;
+    margin-bottom: 15px;
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content p {
@@ -107,7 +104,7 @@
   }
 
   .ProjectSection .right-section .menuContent .project-content .project-box .boxes .project-box-content .skillTags .skillTag {
-    width: 30px;
+    width: 40px;
     font-size: 10px;
     margin-right: 3px;
   }
