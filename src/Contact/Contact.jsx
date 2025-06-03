@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="leftSide">
           <div className="form">
             <h1>Contact Us</h1>
-            <form action="https://formsubmit.co/aaliyandev786@gmail.com" method="POST">
+            <form action="https://formsubmit.co/b1aecec17e29d442f73170af2ac6998a" method="POST">
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" required />
               <textarea name="message" placeholder="Your Message" required></textarea>
