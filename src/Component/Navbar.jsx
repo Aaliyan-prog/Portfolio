@@ -16,13 +16,7 @@ const Navbar = ({ active }) => {
 
   const HandleNavbar = () => {
     setNavbarToggle(!navbarToggle);
-
-    if(navbarToggle === false){
-
-    }
-    console.log(navbarToggle)
   }
-  console.log(navbarToggle)
   
   return (
     <div className="navbar">

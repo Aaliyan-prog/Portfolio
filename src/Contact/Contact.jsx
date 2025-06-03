@@ -14,12 +14,16 @@ import { IoIosMail } from "react-icons/io";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
+    setIsLoading(true);
 
     try {
-      const response = await fetch('https://formsubmit.co/b1aecec17e29d442f73170af2ac6998a', {
+      const formData = new FormData(e.target);
+      const response = await fetch(e.target.action, {
         method: 'POST',
         body: formData,
         headers: {
@@ -28,15 +32,18 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        alert('Message sent successfully!');
+        setSubmitSuccess(true);
         e.target.reset();
       } else {
         throw new Error('Failed to send message');
       }
     } catch (error) {
       alert('Error sending message. Please try again later.');
+    } finally {
+      setIsLoading(false);
     }
   };
+
 
   return (
     <div className="contact">
@@ -45,10 +52,32 @@ const Contact = () => {
         <div className="leftSide">
           <div className="form">
             <h1>Contact Us</h1>
-            <form onSubmit={handleSubmit} method="POST">
+            <form 
+              action="https://formsubmit.co/b1aecec17e29d442f73170af2ac6998a"
+              method="POST" 
+              acceptCharset="UTF-8"
+              encType="multipart/form-data"
+              rel="noopener noreferrer"
+              onSubmit={handleSubmit} 
+            >
               <input type="text" name="name" placeholder="Enter your Name" required />
               <input type="email" name="email" placeholder="Enter your Email" required />
               <textarea name="message" placeholder="Your Message" required></textarea>
+
+              {/* Hidden fields for better FormSubmit functionality */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="box" />
+              <input type="hidden" name="_next" value="https://aaliyan-prog.github.io/Portfolio/#contact" />
+
+              <button type="submit" disabled={isLoading}>
+                {isLoading ? 'Sending...' : 'Send'}
+              </button>
+
+              {submitSuccess && (
+                <div className="success-message">
+                  Message sent successfully!
+                </div>
+              )}
               <button type="submit">Send</button>
             </form>
           </div>
