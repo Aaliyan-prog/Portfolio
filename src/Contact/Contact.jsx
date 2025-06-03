@@ -14,6 +14,30 @@ import { IoIosMail } from "react-icons/io";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch('https://formsubmit.co/b1aecec17e29d442f73170af2ac6998a', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        e.target.reset();
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      alert('Error sending message. Please try again later.');
+    }
+  };
+
   return (
     <div className="contact">
       <Navbar active={"contact"}/>
@@ -21,9 +45,9 @@ const Contact = () => {
         <div className="leftSide">
           <div className="form">
             <h1>Contact Us</h1>
-            <form action="https://formsubmit.co/b1aecec17e29d442f73170af2ac6998a" method="POST">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
+            <form onSubmit={handleSubmit} method="POST">
+              <input type="text" name="name" placeholder="Enter your Name" required />
+              <input type="email" name="email" placeholder="Enter your Email" required />
               <textarea name="message" placeholder="Your Message" required></textarea>
               <button type="submit">Send</button>
             </form>
