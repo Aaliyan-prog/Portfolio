@@ -115,7 +115,7 @@ const Contact = () => {
               <p>Aaliyan-prog</p>
             </div>
             <div className="infoSection">
-              <a className="icon" href="https://www.linkedin.com/in/aaliyan-ahmed-sheikh-99465b349">
+              <a className="icon" href="https://www.linkedin.com/in/aaliyan-ahmed-sheikh">
                 <FaLinkedin className='contactIcon' />
               </a>
               <p>Aaliyan Ahmed Sheikh</p>
